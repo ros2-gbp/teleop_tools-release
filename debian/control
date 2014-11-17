@@ -1,0 +1,12 @@
+Source: ros-hydro-joy-teleop
+Section: misc
+Priority: extra
+Maintainer: Bence Magyar <bence.magyar@pal-robotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-joy-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-actionlib, ros-hydro-rospy, ros-hydro-rostopic, ros-hydro-sensor-msgs
+Description: A (to be) generic joystick interface to control a robot
