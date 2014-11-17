@@ -1,0 +1,12 @@
+Source: ros-hydro-key-teleop
+Section: misc
+Priority: extra
+Maintainer: Bence Magyar <bence.magyar@pal-robotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-key-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-geometry-msgs, ros-hydro-rospy
+Description: A text-based interface to send a robot movement commands
