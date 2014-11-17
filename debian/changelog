@@ -1,0 +1,10 @@
+ros-hydro-key-teleop (0.1.1-0raring) raring; urgency=high
+
+  * Change maintainer
+  * Remove rosbuild legacy
+  * Merge key_teleop into teleop_tools
+  * Contributors: Bence Magyar, Paul Mathieu
+
+ -- Bence Magyar <bence.magyar@pal-robotics.com>  Sun, 16 Nov 2014 23:00:00 -0000
+
+
