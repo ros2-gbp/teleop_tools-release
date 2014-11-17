@@ -1,0 +1,10 @@
+ros-hydro-teleop-tools (0.1.1-0quantal) quantal; urgency=high
+
+  * Change maintainer
+  * Add key_teleop to metapackage
+  * Add teleop_tools metapackage
+  * Contributors: Bence Magyar, Paul Mathieu
+
+ -- Bence Magyar <bence.magyar@pal-robotics.com>  Sun, 16 Nov 2014 23:00:00 -0000
+
+
