@@ -1,0 +1,12 @@
+Source: ros-indigo-teleop-tools
+Section: misc
+Priority: extra
+Maintainer: Bence Magyar <bence.magyar@pal-robotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-teleop-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-joy-teleop, ros-indigo-key-teleop
+Description: A set of generic teleoperation tools for any robot.
