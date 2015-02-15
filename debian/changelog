@@ -1,0 +1,28 @@
+ros-indigo-joy-teleop (0.1.2-0trusty) trusty; urgency=high
+
+  * joy_teleop: fix minor typo
+  * Contributors: G.A. vd. Hoorn
+
+ -- Bence Magyar <bence.magyar@pal-robotics.com>  Sat, 14 Feb 2015 23:00:00 -0000
+
+ros-indigo-joy-teleop (0.1.1-0trusty) trusty; urgency=high
+
+  * Change maintainer
+  * checks for index out of bounds in buttons list
+    buttons is a list, not a dict
+    Filter out buttons not available
+  * Check for b in buttons
+  * Check for IndexError
+  * joy_teleop: add action server auto-refresh
+  * Move everything to joy_teleop subfolder
+  * Contributors: Bence Magyar, Enrique Fernández Perdomo, Paul Mathieu
+
+ -- Bence Magyar <bence.magyar@pal-robotics.com>  Sun, 16 Nov 2014 23:00:00 -0000
+
+ros-indigo-joy-teleop (0.1.0-0trusty) trusty; urgency=high
+
+  * joy_teleop: nice, generic joystick control for ROS
+
+ -- Bence Magyar <bence.magyar@pal-robotics.com>  Wed, 27 Nov 2013 23:00:00 -0000
+
+
