@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package>
   <name>key_teleop</name>
-  <version>0.1.2</version>
+  <version>0.2.0</version>
   <description>A text-based interface to send a robot movement commands</description>
 
-  <maintainer email="bence.magyar@pal-robotics.com">Bence Magyar</maintainer>
+  <maintainer email="bence.magyar.robotics@gmail.com">Bence Magyar</maintainer>
   <author email="siegfried.gevatter@pal-robotics.com">Siegfried-A. Gevatter Pujals</author>
 
   <license>BSD</license>
