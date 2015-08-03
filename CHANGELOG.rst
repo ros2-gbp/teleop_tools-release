@@ -2,6 +2,13 @@
 Changelog for package joy_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.0 (2015-08-03)
+------------------
+* Add example for incrementer
+* Update package.xmls
+* Add incrementer_server
+* Contributors: Bence Magyar
+
 0.1.2 (2015-02-15)
 ------------------
 * joy_teleop: fix minor typo
