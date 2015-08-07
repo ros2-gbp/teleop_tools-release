@@ -1,0 +1,26 @@
+ros-jade-teleop-tools-msgs (0.2.0-0utopic) utopic; urgency=high
+
+  * Add teleop_tools_msgs
+  * Contributors: Bence Magyar
+
+ -- Bence Magyar <bence.magyar.robotics@gmail.com>  Sun, 02 Aug 2015 22:00:00 -0000
+
+ros-jade-teleop-tools-msgs (0.1.2-0utopic) utopic; urgency=high
+
+
+
+ -- Bence Magyar <bence.magyar.robotics@gmail.com>  Sat, 14 Feb 2015 23:00:00 -0000
+
+ros-jade-teleop-tools-msgs (0.1.1-0utopic) utopic; urgency=high
+
+
+
+ -- Bence Magyar <bence.magyar.robotics@gmail.com>  Sun, 16 Nov 2014 23:00:00 -0000
+
+ros-jade-teleop-tools-msgs (0.1.0-0utopic) utopic; urgency=high
+
+
+
+ -- Bence Magyar <bence.magyar.robotics@gmail.com>  Wed, 27 Nov 2013 23:00:00 -0000
+
+
