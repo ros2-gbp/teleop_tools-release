@@ -1,4 +1,9 @@
-joy_teleop
-==========
+teleop_tools
+============
 
-A configurable node to map joystick controls to robot teleoperation commands
+A set of generic teleoperation tools for any robot.
+
+This contains the following teleoperation tools:
+
+* `joy_teleop`, a generic joystick interface for topics and actions
+* `key_teleop`, a lightweight console keyboard teleoperation utility
