@@ -2,6 +2,9 @@
 Changelog for package teleop_tools_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.2 (2016-03-24)
+------------------
+
 0.2.1 (2016-01-29)
 ------------------
 * Remove rospy dependency
