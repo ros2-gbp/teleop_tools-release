@@ -1,3 +1,31 @@
+## teleop_tools (jade) - 0.2.3-0
+
+The packages in the `teleop_tools` repository were released into the `jade` distro by running `/usr/bin/bloom-release teleop_tools --rosdistro jade --track jade` on `Mon, 18 Jul 2016 16:45:59 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: https://github.com/ros-gbp/teleop_tools-release.git
+- rosdistro version: `0.2.2-0`
+- old version: `0.2.2-0`
+- new version: `0.2.3-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## teleop_tools (indigo) - 0.2.3-0
 
 The packages in the `teleop_tools` repository were released into the `indigo` distro by running `/usr/bin/bloom-release teleop_tools --rosdistro indigo --track indigo` on `Mon, 18 Jul 2016 16:39:07 -0000`
