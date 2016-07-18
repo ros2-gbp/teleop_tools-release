@@ -1,0 +1,44 @@
+ros-kinetic-mouse-teleop (0.2.3-0wily) wily; urgency=high
+
+
+
+ -- Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>  Sun, 17 Jul 2016 23:00:00 -0000
+
+ros-kinetic-mouse-teleop (0.2.2-0wily) wily; urgency=high
+
+
+
+ -- Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>  Thu, 24 Mar 2016 00:00:00 -0000
+
+ros-kinetic-mouse-teleop (0.2.1-0wily) wily; urgency=high
+
+  * Add mouse_teleop
+  * Contributors: Enrique Fernandez
+
+ -- Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>  Fri, 29 Jan 2016 00:00:00 -0000
+
+ros-kinetic-mouse-teleop (0.2.0-0wily) wily; urgency=high
+
+
+
+ -- Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>  Sun, 02 Aug 2015 23:00:00 -0000
+
+ros-kinetic-mouse-teleop (0.1.2-0wily) wily; urgency=high
+
+
+
+ -- Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>  Sun, 15 Feb 2015 00:00:00 -0000
+
+ros-kinetic-mouse-teleop (0.1.1-0wily) wily; urgency=high
+
+
+
+ -- Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>  Mon, 17 Nov 2014 00:00:00 -0000
+
+ros-kinetic-mouse-teleop (0.1.0-0wily) wily; urgency=high
+
+
+
+ -- Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>  Thu, 28 Nov 2013 00:00:00 -0000
+
+
