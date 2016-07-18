@@ -1,3 +1,31 @@
+## teleop_tools (kinetic) - 0.2.3-0
+
+The packages in the `teleop_tools` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release teleop_tools --rosdistro kinetic --track kinetic --edit` on `Mon, 18 Jul 2016 17:16:19 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.3-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## teleop_tools (jade) - 0.2.3-0
 
 The packages in the `teleop_tools` repository were released into the `jade` distro by running `/usr/bin/bloom-release teleop_tools --rosdistro jade --track jade` on `Mon, 18 Jul 2016 16:45:59 -0000`
