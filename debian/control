@@ -1,0 +1,12 @@
+Source: ros-kinetic-joy-teleop
+Section: misc
+Priority: extra
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-joy-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib, ros-kinetic-rospy, ros-kinetic-rostopic, ros-kinetic-sensor-msgs, ros-kinetic-teleop-tools-msgs
+Description: A (to be) generic joystick interface to control a robot
