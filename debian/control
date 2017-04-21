@@ -1,0 +1,12 @@
+Source: ros-indigo-joy-teleop
+Section: misc
+Priority: extra
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-joy-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-actionlib, ros-indigo-rospy, ros-indigo-rostopic, ros-indigo-sensor-msgs, ros-indigo-teleop-tools-msgs
+Description: A (to be) generic joystick interface to control a robot
