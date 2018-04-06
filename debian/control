@@ -1,0 +1,12 @@
+Source: ros-lunar-joy-teleop
+Section: misc
+Priority: extra
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-lunar-joy-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-actionlib, ros-lunar-rospy, ros-lunar-rostopic, ros-lunar-sensor-msgs, ros-lunar-teleop-tools-msgs
+Description: A (to be) generic joystick interface to control a robot
