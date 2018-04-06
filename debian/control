@@ -1,0 +1,12 @@
+Source: ros-kinetic-mouse-teleop
+Section: misc
+Priority: extra
+Maintainer: Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-mouse-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-numpy, ros-kinetic-geometry-msgs, ros-kinetic-rospy
+Description: A mouse teleop tool for holonomic mobile robots.
