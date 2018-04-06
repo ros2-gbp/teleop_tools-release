@@ -1,3 +1,31 @@
+## teleop_tools (indigo) - 0.2.6-0
+
+The packages in the `teleop_tools` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release --rosdistro indigo --track indigo teleop_tools` on `Fri, 06 Apr 2018 22:44:30 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: https://github.com/ros-gbp/teleop_tools-release.git
+- rosdistro version: `0.2.5-0`
+- old version: `0.2.5-0`
+- new version: `0.2.6-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.1`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## teleop_tools (kinetic) - 0.2.5-0
 
 The packages in the `teleop_tools` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic teleop_tools` on `Fri, 21 Apr 2017 15:04:18 -0000`
