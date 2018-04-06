@@ -1,0 +1,12 @@
+Source: ros-lunar-mouse-teleop
+Section: misc
+Priority: extra
+Maintainer: Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-lunar-mouse-teleop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-numpy, ros-lunar-geometry-msgs, ros-lunar-rospy
+Description: A mouse teleop tool for holonomic mobile robots.
