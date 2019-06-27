@@ -134,7 +134,7 @@ tracks:
     last_version: 0.3.0
     name: upstream
     patches: null
-    release_inc: '0'
+    release_inc: '1'
     release_repo_url: https://github.com/ros-gbp/teleop_tools-release.git
     release_tag: :{version}
     ros_distro: melodic
