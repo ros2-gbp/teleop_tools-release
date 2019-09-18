@@ -2,6 +2,9 @@
 Changelog for package teleop_tools_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.1 (2019-09-18)
+------------------
+
 1.0.0 (2019-09-10)
 ------------------
 * ROS2 port (`#35 <https://github.com/ros-teleop/teleop_tools/issues/35>`_)
