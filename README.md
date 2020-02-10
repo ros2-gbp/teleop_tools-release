@@ -1,3 +1,31 @@
+## teleop_tools (melodic) - 0.3.1-1
+
+The packages in the `teleop_tools` repository were released into the `melodic` distro by running `/usr/bin/bloom-release teleop_tools --track melodic --rosdistro melodic` on `Mon, 10 Feb 2020 22:25:21 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: https://github.com/ros-gbp/teleop_tools-release.git
+- rosdistro version: `0.3.0-0`
+- old version: `0.3.0-1`
+- new version: `0.3.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## teleop_tools (dashing) - 1.0.2-1
 
 The packages in the `teleop_tools` repository were released into the `dashing` distro by running `/usr/bin/bloom-release teleop_tools --track dashing --rosdistro dashing` on `Mon, 10 Feb 2020 22:01:14 -0000`
