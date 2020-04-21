@@ -2,6 +2,12 @@
 Changelog for package key_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.0 (2020-04-21)
+------------------
+
+1.0.2 (2020-02-10)
+------------------
+
 1.0.1 (2019-09-18)
 ------------------
 * Fix install rules and dashing changes (`#38 <https://github.com/ros-teleop/teleop_tools/issues/38>`_)
