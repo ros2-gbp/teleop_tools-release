@@ -118,7 +118,7 @@ class JoyTeleop(Node):
     def joy_callback(self, data):
         try:
             for c in self.command_list:
-                if self.match_command(c, data.buttons):
+                if self.match_button_command(c, data.buttons) or self.match_axis_command(c, data.axes):
                     self.run_command(c, data)
         except JoyTeleopException as e:
             self.get_logger().error('error while parsing joystick input: %s', str(e))
@@ -137,10 +137,11 @@ class JoyTeleop(Node):
     def register_action(self, name, command):
         """Add an action client for a joystick command."""
         action_name = command['action_name']
-        action_type = self.get_interface_type(command['interface_type'], '.action')
-        self.al_clients[action_name] = ActionClient(self, action_type, action_name)
+        if action_name not in self.al_clients:
+            action_type = self.get_interface_type(command['interface_type'], '.action')
+            self.al_clients[action_name] = ActionClient(self, action_type, action_name)
 
-        if self.al_clients[action_name].wait_for_server(timeout_sec=0.5):
+        if self.al_clients[action_name].server_is_ready():
             if action_name in self.offline_actions:
                 self.offline_actions.remove(action_name)
         else:
@@ -176,12 +177,27 @@ class JoyTeleop(Node):
             if service_name not in self.offline_services:
                 self.offline_services.append(service_name)
 
-    def match_command(self, c, buttons):
+    def match_button_command(self, c, buttons):
         """Find a command matching a joystick configuration."""
-        if len(buttons) == 0 or len(self.command_list[c]['buttons']) == 0 or \
+        if len(buttons) == 0 or not 'buttons' in self.command_list[c] or len(self.command_list[c]['buttons']) == 0 or \
            len(buttons) <= max(self.command_list[c]['buttons']):
             return False
         return any(buttons[cmd_button] for cmd_button in self.command_list[c]['buttons'])
+
+    def match_axis_command(self, c, axes):
+        """Find a command matching a joystick configuration."""
+        if len(axes) == 0 or not 'axes' in self.command_list[c] or len(self.command_list[c]['axes']) == 0 or \
+           len(axes) <= max(int(cmd_axis) for cmd_axis, value in self.command_list[c]['axes'].items()):
+            return False
+
+        # We know there are enough axes that we *might* match.  Iterate through
+        # each of the incoming axes, and if they are totally pressed (1.0),
+        # we have a match and should run the command.
+        for cmd_axis, value in self.command_list[c]['axes'].items():
+            if axes[int(cmd_axis)] == value:
+                return True
+
+        return False
 
     def add_command(self, name, command):
         """Add a command to the command list."""
@@ -189,6 +205,9 @@ class JoyTeleop(Node):
             if 'deadman_buttons' not in command:
                 command['deadman_buttons'] = []
             command['buttons'] = command['deadman_buttons']
+            if 'deadman_axes' not in command:
+                command['deadman_axes'] = []
+            command['axes'] = command['deadman_axes']
         elif command['type'] == 'action':
             if 'action_goal' not in command:
                 command['action_goal'] = {}
@@ -317,20 +336,19 @@ class JoyTeleop(Node):
                 self.register_action(name, cmd)
 
 
-def main():
+def main(args=None):
+    rclpy.init(args=args)
+    node = JoyTeleop()
+
     try:
-        rclpy.init()
-
-        node = JoyTeleop()
-
         rclpy.spin(node)
-
-        node.destroy_node()
-        rclpy.shutdown()
-    except JoyTeleopException:
-        pass
+    except JoyTeleopException as e:
+        node.get_logger().error(e.message)
     except KeyboardInterrupt:
         pass
+
+    node.destroy_node()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':
