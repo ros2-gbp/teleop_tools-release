@@ -2,63 +2,18 @@
 Changelog for package joy_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.1.0 (2020-04-21)
+0.4.0 (2020-06-04)
 ------------------
-* Add the ability to have deadman axes. (`#46 <https://github.com/ros-teleop/teleop_tools/issues/46>`_)
-  * Add the ability to have deadman axes.
-  Some controllers don't have a convenient shoulder trigger
-  button, but do have shoulder "axes".  Allow the axes to
-  be used for a deadman trigger, assuming they are pressed
-  all the way.  Note that I used a dict for the list of
-  axes, as this provides the most convenient way to deal
-  with controllers that use 1.0, -1.0, or 0.0 as the "far"
-  end of the axis.
-  * Make sure to ignore buttons and axes that don't exist.
-* Contributors: Chris Lalancette
+* Fix iteritems and dependency in python3
+* Bump CMake version to avoid CMP0048
+* Fix install of python scripts for Noetic
+* Python3 compatibility for noetic (`#52 <https://github.com/ros-teleop/teleop_tools/issues/52>`_)
+* Contributors: Bence Magyar, Tim Clephas
 
-1.0.2 (2020-02-10)
+0.3.1 (2020-02-10)
 ------------------
-* Avoid halting on action server status checks. (`#48 <https://github.com/ros-teleop/teleop_tools/issues/48>`_)
-* Depend action_tutorials_interfaces (`#44 <https://github.com/ros-teleop/teleop_tools/issues/44>`_)
-* log JoyTeleopException (`#41 <https://github.com/ros-teleop/teleop_tools/issues/41>`_)
-* Contributors: Michel Hidalgo, Yutaka Kondo
-
-1.0.1 (2019-09-18)
-------------------
-* Fix install rules and dashing changes (`#38 <https://github.com/ros-teleop/teleop_tools/issues/38>`_)
-  * fix ament indexing
-  * fix package resource files
-  * add tk depenndency
-  * add check for param index-ability
-  * data files are now package agnostic
-  Signed-off-by: Ted Kern <ted.kern@canonical.com>
-* Contributors: Ted Kern
-
-1.0.0 (2019-09-10)
-------------------
-* ROS2 port (`#35 <https://github.com/ros-teleop/teleop_tools/issues/35>`_)
-  * key_teleop pkg format 3
-  * port teleop_tools_msgs
-  * key_teleop catch KeyboardInterrupt
-  * port mouse_teleop
-  * add key_teleop.yaml
-  * add xmllint test
-  * fix xmllint tests
-  * remove useless class KeyTeleop
-  * Fixes for dynamic topic joy publishers
-  - match_command() now compares button array length to the max
-  deadman button index (apples to apples)
-  - match_command function now checks if any of the deadman buttons
-  are depressed before returning a match
-  - properly handle a std_msgs/msg/Empty 'message_value' by not
-  attempting to access its value
-  - utilizes iter-items to correctly index into the config dict
-  for 'axis_mappings''s 'axis' and 'button' values
-  - set_member() now splits according to a dash (-) rather than a
-  periond (.) to be consistent with ros2 param parsing & example yaml
-  - adds the correct name to setup.py for test_key_teleop.py test
-  * reduce copy/pasta
-* Contributors: Jeremie Deray
+* fix python3 compatibility (`#42 <https://github.com/ros-teleop/teleop_tools/issues/42>`_)
+* Contributors: Yutaka Kondo
 
 0.3.0 (2019-01-03)
 ------------------
