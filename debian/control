@@ -1,0 +1,12 @@
+Source: ros-foxy-teleop-tools
+Section: misc
+Priority: optional
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake, ros-foxy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-foxy-teleop-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-joy-teleop, ros-foxy-key-teleop, ros-foxy-teleop-tools-msgs, ros-foxy-ros-workspace
+Description: A set of generic teleoperation tools for any robot.
