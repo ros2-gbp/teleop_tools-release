@@ -1,20 +1,27 @@
 <?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>mouse_teleop</name>
-  <version>0.4.0</version>
+  <version>1.2.0</version>
   <description>A mouse teleop tool for holonomic mobile robots.</description>
 
   <maintainer email="enrique.fernandez.perdomo@gmail.com">Enrique Fernandez</maintainer>
-  <author email="enrique.fernandez.perdomo@gmail.com">Enrique Fernandez</author>
-
   <license>BSD</license>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <author email="enrique.fernandez.perdomo@gmail.com">Enrique Fernandez</author>
 
-  <exec_depend>rospy</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
-  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-numpy</exec_depend>
-  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-tk</exec_depend>
-  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-numpy</exec_depend>
-  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-tk</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>python-numpy</exec_depend>
+  <exec_depend>python-tk</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>ament_xmllint</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+
 </package>
