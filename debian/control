@@ -1,0 +1,12 @@
+Source: ros-foxy-mouse-teleop
+Section: misc
+Priority: optional
+Maintainer: Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-copyright, ros-foxy-ament-flake8, ros-foxy-ament-pep257, ros-foxy-ament-xmllint, ros-foxy-ros-workspace, python3-all, python3-setuptools
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-foxy-mouse-teleop
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-numpy, python3-tk, ros-foxy-geometry-msgs, ros-foxy-rclpy, ros-foxy-ros-workspace
+Description: A mouse teleop tool for holonomic mobile robots.
