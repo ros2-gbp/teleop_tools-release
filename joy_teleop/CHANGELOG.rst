@@ -2,6 +2,9 @@
 Changelog for package joy_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.1 (2020-10-29)
+------------------
+
 1.2.0 (2020-10-16)
 ------------------
 * Change the file mode of the python files in joy_teleop.
