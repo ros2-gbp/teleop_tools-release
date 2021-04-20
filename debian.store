@@ -1,1 +1,1 @@
-{"base": "573b2923", "parent": "debian/rolling/teleop_tools_msgs", "previous": "6a7531ba", "trim": "", "trimbase": ""}
+{"base": "23b184b2", "parent": "debian/galactic/teleop_tools_msgs", "previous": "9fd0ec59", "trim": "", "trimbase": ""}
