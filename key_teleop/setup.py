@@ -10,12 +10,13 @@ share_path = os.path.join('share', package_name)
 
 setup(
     name=package_name,
-    version='0.3.0',
+    version='1.3.0',
     packages=find_packages(exclude=['test']),
     data_files=[
         (share_path, ['package.xml']),
         (os.path.join(share_path, 'config'), [os.path.join('config', f'{package_name}.yaml')]),
-        (os.path.join('share', 'ament_index', 'resource_index', 'packages'), [os.path.join('resource', package_name)]),
+        (os.path.join('share', 'ament_index', 'resource_index', 'packages'),
+         [os.path.join('resource', package_name)]),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
