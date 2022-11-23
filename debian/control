@@ -1,0 +1,12 @@
+Source: ros-rolling-joy-teleop
+Section: misc
+Priority: optional
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-action-tutorials-interfaces <!nocheck>, ros-rolling-ament-copyright <!nocheck>, ros-rolling-ament-flake8 <!nocheck>, ros-rolling-ament-pep257 <!nocheck>, ros-rolling-ament-xmllint <!nocheck>, ros-rolling-example-interfaces <!nocheck>, ros-rolling-geometry-msgs <!nocheck>, ros-rolling-launch-ros <!nocheck>, ros-rolling-launch-testing <!nocheck>, ros-rolling-std-msgs <!nocheck>, ros-rolling-std-srvs <!nocheck>, ros-rolling-test-msgs <!nocheck>, ros-rolling-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-joy-teleop
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-rolling-control-msgs, ros-rolling-rclpy, ros-rolling-rosidl-runtime-py, ros-rolling-sensor-msgs, ros-rolling-teleop-tools-msgs, ros-rolling-trajectory-msgs, ros-rolling-ros-workspace
+Description: A (to be) generic joystick interface to control a robot
