@@ -1,3 +1,31 @@
+## teleop_tools (galactic) - 1.3.0-1
+
+The packages in the `teleop_tools` repository were released into the `galactic` distro by running `/usr/local/bin/bloom-release --rosdistro galactic teleop_tools --edit` on `Wed, 23 Nov 2022 07:31:31 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: https://github.com/ros2-gbp/teleop_tools-release.git
+- rosdistro version: `1.2.1-2`
+- old version: `1.2.1-2`
+- new version: `1.3.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## teleop_tools (rolling) - 1.2.1-1
 
 The packages in the `teleop_tools` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling teleop_tools` on `Fri, 26 Mar 2021 12:48:04 -0000`
