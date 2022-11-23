@@ -1,0 +1,12 @@
+Source: ros-rolling-mouse-teleop
+Section: misc
+Priority: optional
+Maintainer: Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-copyright <!nocheck>, ros-rolling-ament-flake8 <!nocheck>, ros-rolling-ament-pep257 <!nocheck>, ros-rolling-ament-xmllint <!nocheck>, ros-rolling-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-mouse-teleop
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-numpy, python3-tk, ros-rolling-geometry-msgs, ros-rolling-rclpy, ros-rolling-ros-workspace
+Description: A mouse teleop tool for holonomic mobile robots.
