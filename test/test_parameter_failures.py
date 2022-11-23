@@ -56,7 +56,7 @@ class TestJoyTeleopParameterFailures(unittest.TestCase):
         def launch_joy_teleop(self, parameters):
             joy_teleop_node = launch_ros.actions.Node(
                 package='joy_teleop',
-                node_executable='joy_teleop',
+                executable='joy_teleop',
                 output='both',
                 parameters=[parameters])
 
@@ -150,7 +150,7 @@ class TestJoyTeleopParameterFailures(unittest.TestCase):
             self.assertTrue(joy_teleop_process.wait_for_shutdown(timeout=10))
 
         self.assertEqual(joy_teleop_process.exit_code, 1)
-        self.assertTrue('must have an axis or button' in joy_teleop_process.output)
+        self.assertTrue('must have an axis, button, or value' in joy_teleop_process.output)
 
     def test_teleop_axis_mappings_missing_offset(self):
         parameters = {}
