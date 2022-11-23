@@ -45,10 +45,12 @@ import os
 import signal
 import time
 
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist, TwistStamped
 import rclpy
 from rclpy.duration import Duration
 from rclpy.node import Node
+from rclpy.qos import qos_profile_system_default
+from std_msgs.msg import Header
 
 
 class Velocity(object):
@@ -124,7 +126,14 @@ class SimpleKeyTeleop(Node):
         super().__init__('key_teleop')
 
         self._interface = interface
-        self._pub_cmd = self.create_publisher(Twist, 'key_vel')
+
+        self._publish_stamped_twist = self.declare_parameter('twist_stamped_enabled', False).value
+
+        if self._publish_stamped_twist:
+            self._pub_cmd = self.create_publisher(TwistStamped, 'key_vel',
+                                                  qos_profile_system_default)
+        else:
+            self._pub_cmd = self.create_publisher(Twist, 'key_vel', qos_profile_system_default)
 
         self._hz = self.declare_parameter('hz', 10).value
 
@@ -155,11 +164,22 @@ class SimpleKeyTeleop(Node):
             # TODO(artivis) use Rate once available
             time.sleep(1.0/self._hz)
 
-    def _get_twist(self, linear, angular):
+    def _make_twist(self, linear, angular):
         twist = Twist()
         twist.linear.x = linear
         twist.angular.z = angular
         return twist
+
+    def _make_twist_stamped(self, linear, angular):
+        twist_stamped = TwistStamped()
+        header = Header()
+        header.stamp = rclpy.clock.Clock().now().to_msg()
+        header.frame_id = 'key_teleop'
+
+        twist_stamped.header = header
+        twist_stamped.twist.linear.x = linear
+        twist_stamped.twist.angular.z = angular
+        return twist_stamped
 
     def _set_velocity(self):
         now = self.get_clock().now()
@@ -195,7 +215,11 @@ class SimpleKeyTeleop(Node):
         self._interface.write_line(5, 'Use arrow keys to move, q to exit.')
         self._interface.refresh()
 
-        twist = self._get_twist(self._linear, self._angular)
+        if self._publish_stamped_twist:
+            twist = self._make_twist_stamped(self._linear, self._angular)
+        else:
+            twist = self._make_twist(self._linear, self._angular)
+
         self._pub_cmd.publish(twist)
 
 
