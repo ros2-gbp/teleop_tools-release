@@ -1,0 +1,12 @@
+Source: ros-rolling-teleop-tools
+Section: misc
+Priority: optional
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-teleop-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-joy-teleop, ros-rolling-key-teleop, ros-rolling-teleop-tools-msgs, ros-rolling-ros-workspace
+Description: A set of generic teleoperation tools for any robot.
