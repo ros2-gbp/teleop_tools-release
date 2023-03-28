@@ -2,6 +2,9 @@
 Changelog for package key_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.0 (2023-03-28)
+------------------
+
 1.3.0 (2022-11-23)
 ------------------
 * Fix some warnings from tests.
