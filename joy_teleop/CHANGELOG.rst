@@ -2,6 +2,11 @@
 Changelog for package joy_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.0 (2023-03-28)
+------------------
+* fix incrementer_server
+* Contributors: Borong Yuan
+
 1.3.0 (2022-11-23)
 ------------------
 * launch: fix deprecated attributes
