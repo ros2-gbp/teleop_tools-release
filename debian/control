@@ -1,0 +1,12 @@
+Source: ros-iron-teleop-tools
+Section: misc
+Priority: optional
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-iron-ament-cmake, ros-iron-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-iron-teleop-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-iron-joy-teleop, ros-iron-key-teleop, ros-iron-teleop-tools-msgs, ros-iron-ros-workspace
+Description: A set of generic teleoperation tools for any robot.
