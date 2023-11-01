@@ -1,0 +1,12 @@
+Source: ros-iron-joy-teleop
+Section: misc
+Priority: optional
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-iron-action-tutorials-interfaces <!nocheck>, ros-iron-ament-copyright <!nocheck>, ros-iron-ament-flake8 <!nocheck>, ros-iron-ament-pep257 <!nocheck>, ros-iron-ament-xmllint <!nocheck>, ros-iron-example-interfaces <!nocheck>, ros-iron-geometry-msgs <!nocheck>, ros-iron-launch-ros <!nocheck>, ros-iron-launch-testing <!nocheck>, ros-iron-std-msgs <!nocheck>, ros-iron-std-srvs <!nocheck>, ros-iron-test-msgs <!nocheck>, ros-iron-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-iron-joy-teleop
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-iron-control-msgs, ros-iron-rclpy, ros-iron-rosidl-runtime-py, ros-iron-sensor-msgs, ros-iron-teleop-tools-msgs, ros-iron-trajectory-msgs, ros-iron-ros-workspace
+Description: A (to be) generic joystick interface to control a robot
