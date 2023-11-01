@@ -1,3 +1,31 @@
+## teleop_tools (humble) - 1.3.0-3
+
+The packages in the `teleop_tools` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble teleop_tools` on `Wed, 01 Nov 2023 12:38:11 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: https://github.com/ros2-gbp/teleop_tools-release.git
+- rosdistro version: `1.3.0-2`
+- old version: `1.3.0-2`
+- new version: `1.3.0-3`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## teleop_tools (rolling) - 1.4.0-1
 
 The packages in the `teleop_tools` repository were released into the `rolling` distro by running `/usr/local/bin/bloom-release --rosdistro rolling teleop_tools` on `Tue, 28 Mar 2023 17:59:14 -0000`
