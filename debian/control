@@ -1,0 +1,12 @@
+Source: ros-kilted-mouse-teleop
+Section: misc
+Priority: optional
+Maintainer: Enrique Fernandez <enrique.fernandez.perdomo@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-copyright <!nocheck>, ros-kilted-ament-flake8 <!nocheck>, ros-kilted-ament-pep257 <!nocheck>, ros-kilted-ament-xmllint <!nocheck>, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-mouse-teleop
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-numpy, python3-tk, ros-kilted-geometry-msgs, ros-kilted-rclpy, ros-kilted-ros-workspace
+Description: A mouse teleop tool for holonomic mobile robots.
