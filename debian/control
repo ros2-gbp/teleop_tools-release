@@ -1,0 +1,12 @@
+Source: ros-kilted-joy-teleop
+Section: misc
+Priority: optional
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-copyright <!nocheck>, ros-kilted-ament-flake8 <!nocheck>, ros-kilted-ament-pep257 <!nocheck>, ros-kilted-ament-xmllint <!nocheck>, ros-kilted-example-interfaces <!nocheck>, ros-kilted-geometry-msgs <!nocheck>, ros-kilted-launch-ros <!nocheck>, ros-kilted-launch-testing <!nocheck>, ros-kilted-std-msgs <!nocheck>, ros-kilted-std-srvs <!nocheck>, ros-kilted-test-msgs <!nocheck>, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-joy-teleop
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-kilted-control-msgs, ros-kilted-rclpy, ros-kilted-rosidl-runtime-py, ros-kilted-sensor-msgs, ros-kilted-teleop-tools-msgs, ros-kilted-trajectory-msgs, ros-kilted-ros-workspace
+Description: A (to be) generic joystick interface to control a robot
