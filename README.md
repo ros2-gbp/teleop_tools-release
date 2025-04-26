@@ -1,3 +1,31 @@
+## teleop_tools (kilted) - 2.0.0-1
+
+The packages in the `teleop_tools` repository were released into the `kilted` distro by running `/home/cottsay/infra_ws/install/bloom/bin/bloom-release teleop_tools -r kilted` on `Sat, 26 Apr 2025 17:57:51 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: https://github.com/ros2-gbp/teleop_tools-release.git
+- rosdistro version: `1.8.0-2`
+- old version: `1.8.0-2`
+- new version: `2.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## teleop_tools (rolling) - 2.0.0-1
 
 The packages in the `teleop_tools` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling teleop_tools` on `Wed, 23 Apr 2025 08:25:59 -0000`
