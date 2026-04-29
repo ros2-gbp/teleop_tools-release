@@ -1,0 +1,12 @@
+Source: ros-lyrical-joy-teleop
+Section: misc
+Priority: optional
+Maintainer: Bence Magyar <bence.magyar.robotics@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-copyright <!nocheck>, ros-lyrical-ament-flake8 <!nocheck>, ros-lyrical-ament-pep257 <!nocheck>, ros-lyrical-ament-xmllint <!nocheck>, ros-lyrical-example-interfaces <!nocheck>, ros-lyrical-geometry-msgs <!nocheck>, ros-lyrical-launch-ros <!nocheck>, ros-lyrical-launch-testing <!nocheck>, ros-lyrical-std-msgs <!nocheck>, ros-lyrical-std-srvs <!nocheck>, ros-lyrical-test-msgs <!nocheck>, ros-lyrical-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://index.ros.org/p/joy_teleop/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-joy-teleop
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-lyrical-control-msgs, ros-lyrical-rclpy, ros-lyrical-rosidl-runtime-py, ros-lyrical-sensor-msgs, ros-lyrical-teleop-tools-msgs, ros-lyrical-trajectory-msgs, ros-lyrical-ros-workspace
+Description: A (to be) generic joystick interface to control a robot
