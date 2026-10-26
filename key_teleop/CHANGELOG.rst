@@ -2,6 +2,12 @@
 Changelog for package key_teleop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.0 (2026-10-26)
+------------------
+* Fix velocity dropping to 0.0 when holding down arrow keys (`#101 <https://github.com/ros-teleop/teleop_tools/issues/101>`_)
+* Cleanup bsd 3 clause license usage (`#103 <https://github.com/ros-teleop/teleop_tools/issues/103>`_)
+* Contributors: Alejandro Hernández Cordero, Noel Jiménez García
+
 2.0.0 (2025-04-23)
 ------------------
 
