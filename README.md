@@ -1,3 +1,31 @@
+## teleop_tools (jazzy) - 2.1.0-1
+
+The packages in the `teleop_tools` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --track jazzy --rosdistro jazzy teleop_tools` on `Mon, 26 Oct 2026 14:41:47 -0000`
+
+These packages were released:
+- `joy_teleop`
+- `key_teleop`
+- `mouse_teleop`
+- `teleop_tools`
+- `teleop_tools_msgs`
+
+Version of package(s) in repository `teleop_tools`:
+
+- upstream repository: https://github.com/ros-teleop/teleop_tools.git
+- release repository: https://github.com/ros2-gbp/teleop_tools-release.git
+- rosdistro version: `2.0.0-1`
+- old version: `2.0.0-1`
+- new version: `2.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## teleop_tools (kilted) - 2.1.0-1
 
 The packages in the `teleop_tools` repository were released into the `kilted` distro by running `/usr/bin/bloom-release --track kilted --rosdistro kilted teleop_tools` on `Mon, 26 Oct 2026 14:30:12 -0000`
